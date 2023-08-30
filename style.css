@@ -601,7 +601,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 100px;
+        gap: 150px;
     }
 
     .pics-div {
@@ -615,14 +615,24 @@ body {
     }
 }
 
+@media (max-width: 1065px) {
+    .section-5 {
+        gap: 200px;
+    }
+}
+
 @media (max-width: 900px) {
+    .section-5 {
+        gap: 250px;
+    }
+
     .pics-div {
         margin-top: 50px;
-        margin-bottom: -150px;
     }
 
     .text-div {
         width: 100%;
+        height: fit-content;
     }
 }
 
@@ -647,6 +657,7 @@ body {
     }
 
     .woman{
+        margin-top: 25px;
         height: 80px;
     }
 
@@ -661,6 +672,12 @@ body {
     }
 }
 
+@media (max-width: 620px) {
+    .section-5 {
+        gap: 250px;
+    }
+}
+
 @media (max-width: 600px) {
     .profile {
         position: absolute;
@@ -672,6 +689,7 @@ body {
     }
 
     .woman {
+        margin-top: 0px;
         height: 60px;
     }
 
@@ -686,6 +704,13 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .section-5 {
+        gap: 35%;
+        padding-bottom: 100px;
+    }
+}
+
 @media (max-width: 400px) {
     .profile {
         width: 180px;
@@ -696,16 +721,6 @@ body {
     }
 }
 
-@media (max-width: 365px) {
-    .profile {
-        top: 10px;
-        padding: 0;
-    }
-
-    .more-than-20 {
-        font-size: .5em;
-    }
-}
 
 @media (max-width: 400px) {
     .profile {
@@ -721,6 +736,21 @@ body {
     .profile {
         margin-right: 2%;
         padding-top: 10%;
+    }
+}
+
+@media (max-width: 365px) {
+    .profile {
+        top: 10px;
+        padding: 0;
+    }
+
+    .more-than-20 {
+        font-size: .5em;
+    }
+
+    .woman {
+        margin-top: 20px;
     }
 }
 
@@ -741,6 +771,7 @@ body {
 @media (max-width: 1400px) {
     .section-6 {
         display: grid;
+        gap: 100px;
     }
 
     .s-6-text-div {
@@ -765,7 +796,7 @@ body {
 }
 
 .section-7 {
-    padding: 5% 5% 0% 5%;
+    padding: 5%;
 }
 
 .head-pic {
@@ -815,7 +846,7 @@ body {
 }
 
 .section-8 {
-    padding: 5% 5% 5% 5%;
+    padding: 5%;
 }
 
 .builds {
@@ -840,13 +871,14 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(219.84deg, #474747 4.14%, #222222 44.22%);
-    ;
     box-shadow: 0px 10px 15px 0px #00000014;
     padding: 5%;
     width: 80%;
+    max-width: 1000px;
     position: relative;
-    left: 5%;
+    /* left: 5%; */
     top: 300px;
+    margin: 0 auto;
 }
 
 .section-9-pics {
@@ -894,7 +926,7 @@ body {
 }
 
 .section-9-text {
-    width: 40%;
+    width: 50%;
 }
 
 .what-we {
@@ -926,7 +958,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     .section-9 {
         flex-wrap: wrap;
         column-gap: 100px;
