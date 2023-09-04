@@ -1099,6 +1099,7 @@ body {
 
 .gen-pro-text {
     line-height: 28px;
+    max-width: 547px;
 }
 
 .company {
